@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="form.css"/>
+    <title>Formulaire d'inscription</title>
+  </head>
+  <body>
+    <nav id="grande">
+    <header >Inscription</header>
+    <h5 id="hidden"><span>/!\</span> Il y a un problème avec le formulaire <span>/!\</span></h5>
+    <nav>
+      <div class="left">
+        <p>Login :</p>
+        <p>Nom :</p>
+        <p>Prénom :</p>
+        <p>Adresse mail :</p>
+        <p>Site Web :</p>
+        <p>Mot de passe :</p>
+        <p>Confirmation mot de passe :</p>
+      </div>
+      <div class="right">
+        <form id="form" method="post">
+          <input id="login1" class="text" type="text" name="login" autofocus="autofocus" placeholder="Saisissez votre login..." required size="30"/><label>&nbsp;&nbsp;*</label><br/>
+            <p id="login2" class="error"><span>/!\</span> Veuillez saisir un login.</p>
+          <input id="nom1" class="text" type="text" name="nom" placeholder="Saisissez votre nom..." required size="30"/><label>&nbsp;&nbsp;&nbsp;</label><br/>
+            <p id="nom2" class="error"><span>/!\</span> Veuillez saisir votre nom de famille.</p>
+          <input id="prenom1" class="text" type="text" name="prenom" placeholder="Saisissez votre prénom..." required size="30"/><label>&nbsp;&nbsp;&nbsp;</label><br/>
+            <p id="prenom2" class="error"><span>/!\</span> Veuillez saisir votre prénom.</p>
+          <input id="email1" class="mail" type="email" name="email" placeholder="prenom@email.com" required size="30"/><label>&nbsp;&nbsp;*</label><br/>
+            <p id="email2" class="error"><span>/!\</span> Veuillez saisir une adresse email valide.</p>
+          <input id="site1" class="url" type="url" name="sujet" placeholder="http://votresite.com" required size="30"/><label>&nbsp;&nbsp;*</label><br/>
+            <p id="site2" class="error"><span>/!\</span> Veillez saisir un url valide.</p>
+          <input id="motdepasse1" class="pass" type="password" name="nom" pattern='(.*{4,}[0-9]{2,})' placeholder="Saisissez un mot de passe..." required size="30"/><label>&nbsp;&nbsp;*</label><br/>
+            <p id="motdepasse2" class="error"><span>/!\</span> Le mot de passe doit contenir au moins 6 caractères dont 2 chiffres.</p>
+          <input id="confirmationmdp1" class="pass" type="password" name="nom" placeholder="Confirmer votre mot de passe..." required size="30" onblur="samePassword"/><label>&nbsp;&nbsp;*</label><br/>
+            <p id="confirmationmdp2" class="error"><span>/!\</span> Les mots de passes ne sont pas identiques.</p>
+      </div>
+    </nav>
+    <footer>
+      <input class="condition" type="checkbox" name="condition" required/>
+      <p>J'accepte les termes du <a href="termecontract.html"><em><span>contract utilisateur</span></em></a>.</p>
+    </footer>
+          <input id="send" class="submit" type="submit" onclick="errorLogin(); errorNom(); errorPrenom();
+          errorEmail(); errorSite(); validationMdp(); samePassword();" value="Valider l'inscription"/>
+        </form>
+    </nav>
+    <script type="text/javascript" src="form.js"></script>
+  </body>
+</html>

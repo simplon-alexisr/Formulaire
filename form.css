@@ -1,0 +1,125 @@
+*{
+  font-family: "Indie Flower";
+}
+
+body{
+  width: 600px;
+  height: auto;
+}
+
+header{
+  background-color: red;
+  color: white;
+  padding-top: 20px;
+  width: 600px;
+  height: 40px;
+  font-family: 'Digital-7';
+  font-size: 25px;
+  text-align: center;
+}
+
+#hidden{
+  color: red;
+  text-align: center;
+  font-size: 15px;
+  opacity: 0;
+}
+
+span{
+  text-decoration: underline;
+}
+
+em{
+  color: blue;
+}
+
+nav{
+  height: 227px;
+  margin-top: 20px;
+}
+
+.left{
+  width: 200px;
+  height: 225px;
+  float: left;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.left p{
+  line-height: 24px;
+}
+
+div p{
+  line-height: 30px;
+  font-family: 'Georgia';
+}
+
+.right{
+  padding-top: 15px;
+  width: 370px;
+  float: left;
+  line-height: 30px;
+  text-align: left;
+}
+
+.error{
+  font-size: 10px;
+}
+
+#form p{
+  margin-top: -10px;
+  margin-bottom: -11px;
+  color: red;
+}
+#login2{
+  opacity: 0;
+}
+#nom2{
+  opacity: 0;
+}
+#prenom2{
+  opacity: 0;
+}
+#email2{
+  opacity: 0;
+}
+#site2{
+  opacity: 0;
+}
+#motdepasse2{
+  opacity: 0;
+}
+#confirmationmdp2{
+  opacity: 0;
+}
+
+footer{
+  margin: -10px 0 0 15px;
+}
+
+footer input.condition{
+  width: 20px;
+  height: 20px;
+  margin-top: 16px;
+  float: left;
+}
+
+footer p{
+  float: left;
+  font-size: 17px;
+}
+
+input.submit{
+  background-color: red;
+  color: white;
+  width: 600px;
+  height: 40px;
+  font-family: 'Digital-7';
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  text-align: center;
+  margin-top: px;
+}
